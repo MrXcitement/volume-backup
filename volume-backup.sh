@@ -21,7 +21,7 @@ backup() {
         mkdir -p `dirname /backup/$ARCHIVE`
     fi
 
-    tar -C /volume $TAROPTS -cf $ARCHIVE_PATH ./
+    tar -C /volume "$TAROPTS" -cf "$ARCHIVE_PATH" ./
 }
 
 restore() {
